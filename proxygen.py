@@ -1,10 +1,19 @@
 # Tools originally by PhynX
+# Note : This tool will eat more CPUs, Please use this tool carefully.
 # -*- coding: utf-8 -*-
 
 import os,sys,time,random
 
+def banner():
+    print('''
+            ___  ____ ____ _  _ _   _ ____ ____ _  _ 
+            |__] |__/ |  |  \/   \_/  | __ |___ |\ | 
+            |    |  \ |__| _/\_   |   |__] |___ | \| 
+                                            By:PhynX                      
+    ''')
+
 def ponik():
-    global ttlgen
+    global ttlgen, output
     if sys.platform.startswith("linux"):
         os.system('clear')
     if sys.platform.startswith("freebsd"):
@@ -13,14 +22,18 @@ def ponik():
         os.system('cls')
     else:
         os.system('clear')
+    banner()
     ttlgen = int(input('How many Proxy? [1-Unlimited] : '))
+    output = str(input('Output Name : '))
     if ttlgen == '':
+        banner()
         ponik()
     elif ttlgen >= 100000:
-        huh = str(input('\nAre you sure want generate ' + str(ttlgen) + 'Proxy? : '))
+        huh = str(input('\nAre you sure want generate ' + str(ttlgen) + ' Proxy? [PRESS ENTER TO CONTINUE]'))
         if huh == "":
            gen()
         else:
+            banner()
             ponik()
     else:
         if sys.platform.startswith("linux"):
@@ -31,12 +44,13 @@ def ponik():
             os.system('cls')
         else:
             os.system('clear')
+        banner()
         gen()
         
 def gen():
     global i, startgen
     startgen = True
-    file = open('proxies.txt', 'wb')
+    file = open(str(output), 'wb')
     i = 0
     while startgen:
         for x in range(ttlgen):
