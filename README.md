@@ -1,2 +1,5 @@
-# ProxyGen
-Proxy Random Generator in Python
+# Proxy Generator
+Proxy Random Generator in Python.
+
+#Usage
+`python proxygen.py`
