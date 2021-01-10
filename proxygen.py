@@ -9,7 +9,7 @@ def ponik():
         os.system('clear')
     if sys.platform.startswith("freebsd"):
         os.system('clear')
-    if sys.platform.startswith("Win32"):
+    if sys.platform.startswith("win32"):
         os.system('cls')
     else:
         os.system('clear')
@@ -27,7 +27,7 @@ def ponik():
             os.system('clear')
         if sys.platform.startswith("freebsd"):
             os.system('clear')
-        if sys.platform.startswith("Win32"):
+        if sys.platform.startswith("win32"):
             os.system('cls')
         else:
             os.system('clear')
@@ -51,7 +51,7 @@ def gen():
                     os.system('clear')
                 if sys.platform.startswith("freebsd"):
                     os.system('clear')
-                if sys.platform.startswith("Win32"):
+                if sys.platform.startswith("win32"):
                     os.system('cls')
                 else:
                     os.system('clear')
@@ -63,7 +63,7 @@ def gen():
                     os.system('clear')
                 if sys.platform.startswith("freebsd"):
                     os.system('clear')
-                if sys.platform.startswith("Win32"):
+                if sys.platform.startswith("win32"):
                     os.system('cls')
                 else:
                     os.system('clear')
