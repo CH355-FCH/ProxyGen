@@ -1,5 +1,5 @@
 # Proxy Generator
 Proxy Random Generator in Python.
 
-#Usage
+# Usage
 `python proxygen.py`
